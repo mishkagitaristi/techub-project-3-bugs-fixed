@@ -1,0 +1,16 @@
+<form  class="wrapper relative" method="POST" action="/fisRegister">
+    <div class="regFis"  id="registerFisical">
+        <div class="regFis__leftside" >
+            <input type="text" placeholder="სახელი" class="regFis__input" name="firstname" required>
+            <input type="text" placeholder="მობილურის ნომერი" class="regFis__input" name="mobile" required>
+            <input type="password" placeholder="პაროლი" class="regFis__input" name="password" required>
+        </div>
+        <div class="regFis__rightside">
+            <input type="text" placeholder="გვარი" class="regFis__input" name="lastname" required>
+            <input type="email" placeholder="ელ-ფოსტა" class="regFis__input" name="email" required>
+            <input type="password" placeholder="გაიმეორეთ პაროლი" class="regFis__input" name="repeatPassword" required>
+        </div>
+        <button class="regFis__btn">დარეგისტრირება</button>
+        <div class="exit" onclick="popupClose()"></div>
+    </div>
+</form>

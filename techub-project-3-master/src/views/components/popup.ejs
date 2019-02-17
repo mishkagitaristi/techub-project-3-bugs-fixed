@@ -1,0 +1,16 @@
+<% if (locals.messageSuccess != false) { %>
+    <div class="notification" id="notification"> 
+        <div class="notification__box">
+            <p class="notification__text"><%= locals.messageSuccess -%></p>
+            <div class="exit" onclick="errorPopupClose()"></div>
+        </div>
+    </div>
+<% } %>
+<% if (locals.errorMessage != false) { %>
+    <div class="notification" id="notification"> 
+        <div class="notification__box">
+            <p class="notification__text"><%= locals.errorMessage -%></p>
+            <div class="exit" onclick="errorPopupClose()"></div>
+        </div>
+    </div>
+<% } %>

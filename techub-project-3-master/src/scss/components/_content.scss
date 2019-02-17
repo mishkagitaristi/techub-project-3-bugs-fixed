@@ -1,0 +1,136 @@
+.section{
+    &__header{
+        margin-top: 50px;
+        font-size: 25px;
+        color: #d4caca;
+        width: 100%;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+        padding-bottom: 15px;
+        padding-left: 10px;
+        font-weight: 500;
+    }
+    &__container{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item{
+        position: relative;
+        margin-right: 20px;
+        margin-top: 50px;
+        width: calc(25% - 15px);
+        height: 330px;
+        background: rgb(53, 30, 30);
+        transition: 0.35s;
+        &:nth-child(4n){
+            margin-right: 0px;
+        }
+        &:last-child{
+            margin-bottom: 40px;
+        }
+        &:hover{
+            box-shadow:0 20px 40px 0 rgba(27, 33, 44, 0.5);
+            transform: translateY(-0.25em);
+        }
+        
+        
+        &-image{
+            cursor: pointer;
+            display: block;
+            width: 220px;
+            height: 100%;
+            max-height: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: rgba(9, 155, 155, 0.6);
+            & img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-name{
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+        &-sellingprice{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            &--old{
+                font-size: 18px;    
+                color: #e19b9b;
+                text-decoration:line-through;
+                cursor: context-menu;
+                &:hover{
+                    color: rgb(129, 3, 3);
+                }
+            }
+            &--new{
+                font-weight: bold;
+                font-size: 28px;
+                cursor: context-menu;
+                color:#8abe52;
+                &:hover{
+                    color: green;
+                }
+            }
+
+        }
+    }
+}
+.discount{
+    width: 100px;
+    height: 100px;
+    background-image: url('https://www.pfwh.com/wp-content/uploads/2015/08/sale-corner-left.png');
+    background-size: cover;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 20px;
+    right: 20px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+}
+.new{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://pngimage.net/wp-content/uploads/2018/06/new-png-images-4.png');
+    background-size: cover;
+    top: 19px;
+    right: 16px;
+}
+
+.soldout{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('https://www.feedadditives-global.com/wp-content/uploads/Sold-out-banner-1-500x500-px.png');
+    background-size: cover;
+    top: 19px;
+    right: 19px;
+}
+
+.sizes{
+    background: transparent;
+    color: grey;
+    &:hover{
+        color: rgba(128, 128, 128, 0.5);
+    }
+}
+
+
+.option{
+    padding:3px;
+    margin: 0;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;   
+}

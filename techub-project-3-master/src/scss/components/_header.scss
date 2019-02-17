@@ -1,0 +1,58 @@
+.wrapper{
+    width: 1100px;
+    height: auto;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    background: #b9d6ba;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    &__logo{
+        width: 170px;
+        height: 70px;
+        background-image: url('http://www.driftees.com/wp-content/uploads/2016/07/DtLogo_up2.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    &__navigation{
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            &-item {
+                margin-left: 10px;
+                font-size: 16px;
+                padding-bottom: 5px;
+                color: rgb(37, 32, 32);
+                padding: 10px;
+                border-bottom: 2px solid transparent;
+                & a {
+                    margin-left: 10px;
+                    font-size: 16px;
+                    padding-bottom: 5px;
+                    color: rgb(37, 32, 32);
+                    padding: 10px;
+                    border-bottom: 2px solid transparent;
+                }
+                &:hover{
+                    transition: 0.55s;
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+                    color: rgba(4, 78, 41, 0.712);
+                }
+            }
+        }
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+}

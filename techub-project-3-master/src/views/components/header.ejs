@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="wrapper header__container">
+        <div class="header__logo"></div>
+        <nav class="header__navigation">
+            <ul class="header__navigation__list">
+            <% if (locals.cookies == 'true') { %>
+                <li class="header__navigation__list-item"><a href="#rescentlyAdded"> ახალი დამატებული</a></li>
+                <li class="header__navigation__list-item"><a href="#popular">პოპულარული</a></li>
+                <li class="header__navigation__list-item"> <a href="#sale">ფასდაკლება</a></li>
+                <li class="header__navigation__list-item" onclick="exitUser()">გასვლა</li>
+            <% } %>
+            <% if (locals.cookies != 'true') { %>
+                <li class="header__navigation__list-item" onclick="myProfile()">ჩემი პროფილი</li>
+            </ul>
+            <% } %>
+        </nav>
+    </div>
+</header>

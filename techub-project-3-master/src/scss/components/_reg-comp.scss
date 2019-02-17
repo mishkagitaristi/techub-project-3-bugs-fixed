@@ -1,0 +1,56 @@
+.regCom{
+    display: none; //flex
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #CAD5CA;
+    position: fixed;
+    top: 120px;
+    right: 60px;
+    z-index: 100;
+
+    &__leftside{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__rightside{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__input{
+        width: 220px;
+        padding: 15px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid grey;
+        background: #dddddd;
+
+        &:focus{
+            background: rgba(73, 95, 51, 0.178);
+            color: #f2f2f2;
+        }
+    }
+    &__btn{
+        margin: 0 auto;
+        width: calc(100% - 30px);
+        padding: 25px 50px;
+        margin-bottom: -34px;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid grey;
+        &:hover{
+            cursor: pointer;
+            background: rgb(73, 95, 51);
+            color: #f2f2f2;
+        }
+    }
+}

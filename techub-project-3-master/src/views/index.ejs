@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/styles/index.css">
+    <title>Tech Hub Project #3</title>
+</head>
+<body>
+    <%- include('./components/header') -%>
+    <%- include('./components/loginOrRegister') -%>
+    <%- include('./components/login') -%>
+    <%- include('./components/regFis') -%>
+    <%- include('./components/regComp') -%>
+
+    <% if (locals.cookies == 'true') { %>
+        <section class="rescently-added section wrapper" id="rescentlyAdded">
+            <h2 class="section__header">ახალი დამატებული</h2>
+                <div class="section__container">
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://images.express.com/is/image/expressfashion/0095_00925378_0098?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"></div>
+                        <span class="section__item-name">this is product name</span> 
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://target.scene7.com/is/image/Target/GUEST_b18ef010-ba05-47c3-b4e6-a9a9b00323f1?wid=488&hei=488&fmt=pjpeg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1503910810/505995_DOPE0_9095_001_098_0000_Light-Ace-sneaker-with-crystals.jpg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://ng.jumia.is/umCc1UwiuOeO341FwvC-LXDRPn4=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/79/366501/1.jpg"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://cdn.shopify.com/s/files/1/1104/4168/products/Allbirds_W_Wool_Runner_Kotare_GREY_ANGLE_0f3bfe63-ac7d-4106-9acf-d26f8414ac53_600x600.png?v=1542064004" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://mephistoshoes.eu/image/cache/catalog/meph.%20boots%20men/darwin-black-220x200.jpg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://images.express.com/is/image/expressfashion/0095_00925378_0098?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"></div>
+                        <span class="section__item-name">this is product name</span>
+        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://target.scene7.com/is/image/Target/GUEST_b18ef010-ba05-47c3-b4e6-a9a9b00323f1?wid=488&hei=488&fmt=pjpeg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1503910810/505995_DOPE0_9095_001_098_0000_Light-Ace-sneaker-with-crystals.jpg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://ng.jumia.is/umCc1UwiuOeO341FwvC-LXDRPn4=/fit-in/680x680/filters:fill(white):sharpen(1,0,false):quality(100)/product/79/366501/1.jpg"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://cdn.shopify.com/s/files/1/1104/4168/products/Allbirds_W_Wool_Runner_Kotare_GREY_ANGLE_0f3bfe63-ac7d-4106-9acf-d26f8414ac53_600x600.png?v=1542064004" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+
+                
+
+        </section>
+        <section class="rescently-added section wrapper" id="popular">
+                <h2 class="section__header">პოპულარული</h2>
+                    <div class="section__container">
+                        <div class="section__item">
+                            <div class="soldout"></div>
+                            <div class="section__item-image"><img src="https://underarmour.scene7.com/is/image/Underarmour/1297449-100_DEFAULT?scl=1&fmt=jpg&qlt=80&wid=612&hei=650&size=551,585&cache=on,off&bgc=f0f0f0&resMode=sharp2" alt="ugg boot"></div>
+                            <span class="section__item-name">this is product name</span>
+                            <select class="sizes">
+                                <option class="option" value="size" selected>size</option>
+                                <option class="option" value="38-eu">38-eu</option>
+                                <option class="option" value="39-eu">39-eu</option>
+                                <option class="option" value="40 eu">40-eu</option>
+                                <option class="option" value="41-eu">41-eu</option>
+                                <option class="option" value="42-eu">42-eu</option>
+                                <option class="option" value="43-eu">43-eu</option>
+                                <option class="option" value="44-eu">44-eu</option>
+                                <option class="option" value="45-eu">45-eu</option>
+                            </select>
+                            <div class="section__item-sellingprice">
+                                <span class="section__item-sellingprice--old">123 ₾</span>
+                                <span class="section__item-sellingprice--new">456 ₾</span>
+                            </div>
+                        </div>
+
+                        <div class="section__item">
+                            <div class="section__item-image"><img src="https://underarmour.scene7.com/is/image/Underarmour/1295725-003_DEFAULT?bgc=f0f0f0&wid=640&hei=480&size=440,420" alt="ugg boot"></div>
+                            <span class="section__item-name">this is product name</span>
+                            <select class="sizes">
+                                <option class="option" value="size" selected>size</option>
+                                <option class="option" value="38-eu">38-eu</option>
+                                <option class="option" value="39-eu">39-eu</option>
+                                <option class="option" value="40 eu">40-eu</option>
+                                <option class="option" value="41-eu">41-eu</option>
+                                <option class="option" value="42-eu">42-eu</option>
+                                <option class="option" value="43-eu">43-eu</option>
+                                <option class="option" value="44-eu">44-eu</option>
+                                <option class="option" value="45-eu">45-eu</option>
+                            </select>
+                            <div class="section__item-sellingprice">
+                                <span class="section__item-sellingprice--old">123 ₾</span>
+                                <span class="section__item-sellingprice--new">456 ₾</span>
+                            </div>
+                        </div>
+
+                        <div class="section__item">
+                            <div class="soldout"></div>
+                            <div class="section__item-image"><img src="https://media.kohlsimg.com/is/image/kohls/2873022_Black_White_Dark_Gray?wid=500&hei=500&op_sharpen=1" alt="ugg boot"></div>
+                            <span class="section__item-name">this is product name</span>
+                            <select class="sizes">
+                                <option class="option" value="size" selected>size</option>
+                                <option class="option" value="38-eu">38-eu</option>
+                                <option class="option" value="39-eu">39-eu</option>
+                                <option class="option" value="40 eu">40-eu</option>
+                                <option class="option" value="41-eu">41-eu</option>
+                                <option class="option" value="42-eu">42-eu</option>
+                                <option class="option" value="43-eu">43-eu</option>
+                                <option class="option" value="44-eu">44-eu</option>
+                                <option class="option" value="45-eu">45-eu</option>
+                            </select>
+                            <div class="section__item-sellingprice">
+                                <span class="section__item-sellingprice--old">123 ₾</span>
+                                <span class="section__item-sellingprice--new">456 ₾</span>
+                            </div>
+                        </div>
+
+                        <div class="section__item">
+                            <div class="section__item-image"><img src="https://www.athleticpropulsionlabs.com/media/wysiwyg/men/training.jpg" alt="ugg boot"></div>
+                            <span class="section__item-name">this is product name</span>
+                            <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                            <div class="section__item-sellingprice">
+                                <span class="section__item-sellingprice--old">123 ₾</span>
+                                <span class="section__item-sellingprice--new">456 ₾</span>
+                            </div>
+                        </div>
+
+                        <div class="section__item">
+                            <div class="section__item-image"><img src="https://www.decathlon.co.uk/media/848/8488051/classic_1252660.jpg" alt="ugg boot"></div>
+                            <span class="section__item-name">this is product name</span>
+                            <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                            <div class="section__item-sellingprice">
+                                <span class="section__item-sellingprice--old">123 ₾</span>
+                                <span class="section__item-sellingprice--new">456 ₾</span>
+                            </div>
+                        </div>
+                        
+                    
+        
+        </section>
+        <section class="rescently-added section wrapper" id="sale">
+                    <h2 class="section__header">ფასდაკლება</h2>
+                        <div class="section__container">
+                            <div class="section__item">
+                            <div class="discount"></div>
+                                <div class="section__item-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdk6I867oBRtGKU_xoHuwreRCSNetRnF0GNw8PfU9KPM7oq0zO" alt="ugg boot"></div>
+                                <span class="section__item-name">this is product name</span>
+                                <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                                <div class="section__item-sellingprice">
+                                    <span class="section__item-sellingprice--old" style="text-decoration: line-through">456 ₾</span>
+                                    <span class="section__item-sellingprice--new">400 ₾</span>
+                                </div>
+                            </div>
+
+
+                            <div class="section__item">
+                            <div class="discount"></div>
+                                <div class="section__item-image"><img src="http://www.feetstreat.co.nz/image/cache/data/Keen/Keen%20Mens%20Oakridge%20Mid%20image%201-220x200.jpg" alt="ugg boot"></div>
+                                <span class="section__item-name">this is product name</span>
+                                <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                                <div class="section__item-sellingprice">
+                                    <span class="section__item-sellingprice--old" style="text-decoration: line-through">456 ₾</span>
+                                    <span class="section__item-sellingprice--new">400 ₾</span>
+                                </div>
+                            </div>
+
+                            
+                            <div class="section__item">
+                            <div class="discount"></div>
+                                <div class="section__item-image"><img src="http://www.feetstreat.co.nz/image/cache/data/Keen/Keen%20Mens%20Newport%20H2%203-220x200.jpg" alt="ugg boot"></div>
+                                <span class="section__item-name">this is product name</span>
+                                <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                                <div class="section__item-sellingprice">
+                                    <span class="section__item-sellingprice--old" style="text-decoration: line-through">456 ₾</span>
+                                    <span class="section__item-sellingprice--new">400 ₾</span>
+                                </div>
+                            </div>
+
+                            
+        </section>
+    <% } %>
+    
+    <% if (locals.cookies != 'true') { %>
+        <section class="rescently-added section wrapper" id="rescentlyAdded">
+            <h2 class="section__header">ახალი დამატებული</h2>
+                <div class="section__container">
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://images.express.com/is/image/expressfashion/0095_00925378_0098?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"></div>
+                        <span class="section__item-name">this is product name</span> 
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://target.scene7.com/is/image/Target/GUEST_b18ef010-ba05-47c3-b4e6-a9a9b00323f1?wid=488&hei=488&fmt=pjpeg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1503910810/505995_DOPE0_9095_001_098_0000_Light-Ace-sneaker-with-crystals.jpg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+                    <div class="section__item">
+                        <div class="new"></div>
+                        <div class="section__item-image"><img src="https://media.gucci.com/style/DarkGray_Center_0_0_800x800/1503910810/505995_DOPE0_9095_001_098_0000_Light-Ace-sneaker-with-crystals.jpg" alt="ugg boot"></div>
+                        <span class="section__item-name">this is product name</span>
+                        <select class="sizes">
+                            <option class="option" value="size" selected>size</option>
+                            <option class="option" value="38-eu">38-eu</option>
+                            <option class="option" value="39-eu">39-eu</option>
+                            <option class="option" value="40 eu">40-eu</option>
+                            <option class="option" value="41-eu">41-eu</option>
+                            <option class="option" value="42-eu">42-eu</option>
+                            <option class="option" value="43-eu">43-eu</option>
+                            <option class="option" value="44-eu">44-eu</option>
+                            <option class="option" value="45-eu">45-eu</option>
+                        </select>
+                        <div class="section__item-sellingprice">
+                            <span class="section__item-sellingprice--old">123 ₾</span>
+                            <span class="section__item-sellingprice--new">456 ₾</span>
+                        </div>
+                    </div>
+
+        </section>
+    <% } %>
+
+
+    <%- include('./components/popup') -%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../assets/scripts/app.js"></script>
+</body>
+</html>

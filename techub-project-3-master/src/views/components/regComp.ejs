@@ -1,0 +1,18 @@
+<form  class="wrapper relative" method="POST" action="/comRegister">
+    <div class="regCom"  id="registerCompany">
+        <div class="regCom__leftside">
+            <input type="text" placeholder="სახელი" class="regCom__input" name="firstname" required>
+            <input type="text" placeholder="მობილურის ნომერი" class="regCom__input" name="mobile" required>
+            <input type="text" placeholder="კომპანიის დასახელება" class="regCom__input" name="companyName" required>
+            <input type="password" placeholder="პაროლი" class="regCom__input" name="password" required>
+        </div>
+        <div class="regFis__rightside">
+            <input type="text" placeholder="გვარი" class="regCom__input" name="lastname" required>
+            <input type="email" placeholder="ელ-ფოსტა" class="regCom__input" name="email" required>
+            <input type="text" placeholder="საიდენტიფიკაციო კოდი" class="regCom__input" name="companyId" required>
+            <input type="password" placeholder="გაიმეორეთ პაროლი" class="regCom__input" name="repeatPassword" required>
+        </div>
+        <button class="regCom__btn">დარეგისტრირება</button>
+        <div class="exit" onclick="popupClose()"></div>
+    </div>
+</form>
